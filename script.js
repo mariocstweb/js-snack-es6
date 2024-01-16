@@ -1,5 +1,5 @@
 const tableName = "Tavolo Vip";
-
+// Array con i nomi degli invitati
 const guests = [
   "Brad Pitt",
   "Johnny Depp",
@@ -12,3 +12,6 @@ const guests = [
   "Amal Clooney",
   "Maneskin",
 ];
+
+// Inizializzo un nuovo vuoto array vuoto dove inserirò i nuovi oggetti generati
+guestsList = [];
