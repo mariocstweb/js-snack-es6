@@ -1,5 +1,4 @@
 // Recupero gli elementi dal DOM
-
 const list = document.getElementById("list");
 
 const tableName = "Tavolo Vip";
@@ -29,4 +28,18 @@ for (let i = 0; i < guests.length; i++) {
   guestsList.push(newObject);
 }
 
-console.log(guestsList);
+// console.log(guestsList);
+
+// Flagvuoto
+let tableList = "";
+
+for (let i = 0; i < guestsList.length; i++) {
+  const guest = guestsList[i];
+  tableList += `
+  <li>
+    Tavolo: ${guest.table}, Ospite: ${guest.guess}, Posto: ${guest.place}
+  </li>
+`;
+}
+
+list.innerHTML += tableList;
