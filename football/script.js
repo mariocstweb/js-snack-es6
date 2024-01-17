@@ -32,3 +32,13 @@ footballSquads.forEach((squad) => {
 });
 
 console.log(footballSquads);
+
+// Tramite il metodo .map creo un nuovo array con i valori richiesti
+const newSquads = footballSquads.map((squad) => {
+  return {
+    name: squad.name,
+    foul: squad.foul,
+  };
+});
+
+console.log(newSquads);
