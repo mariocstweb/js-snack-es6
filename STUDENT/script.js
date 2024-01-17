@@ -38,13 +38,11 @@ const studentsList = [
 
 // Tramite .filter filtro appunto dall'array precedente gli studenti che soddisfano i requisiti richiesti
 // Studenti con almeno 70 di voto
-const seventyStudent = studentsList.filter((student) => student.vote >= 70);
+const seventyStudent = studentsList.filter(({ vote }) => vote >= 70);
 
 console.log(seventyStudent);
 
 // Studenti con almeno 70 di voto e id superiore a 120
-const studentNew = studentsList.filter(
-  (student) => student.vote >= 70 && student.id >= 120
-);
+const studentNew = seventyStudent.filter(({ id }) => id >= 120);
 
 console.log(studentNew);
