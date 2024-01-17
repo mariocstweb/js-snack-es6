@@ -46,3 +46,8 @@ console.log(seventyStudent);
 const studentNew = seventyStudent.filter(({ id }) => id >= 120);
 
 console.log(studentNew);
+
+// Creazione di un array di nomi in maiuscolo tramite .map
+const plates = studentsList.map(({ name }) => name.toUpperCase());
+
+console.log(plates);
